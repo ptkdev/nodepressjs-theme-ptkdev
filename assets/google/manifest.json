@@ -1,0 +1,31 @@
+{
+  "short_name": "Patryk Rzucidlo (PTKDev)",
+  "name": "Patryk Rzucidlo (PTKDev)",
+  "start_url": "/?utm_source=web_app_manifest",  
+  "icons": [
+    {
+      "src": "/assets/google/icon/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/google/icon/256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/google/icon/384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/google/icon/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#b61924",
+  "theme_color": "#b61924",
+  "display": "standalone",
+  "orientation": "portrait"
+}

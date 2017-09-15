@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Open Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Open Sans Pro'), local('Open Sans Pro'), url('/style/fonts/Open Sans Pro.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Open Sans Pro', 'Roboto', sans-serif;
+    font-size: 16px;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #46aef7;
+    overflow-x: hidden;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:focus {
+    text-decoration: none;
+
+    color: #fff;
+}
+
+canvas {
+    display: block;
+}
+
+#content {
+    font-size: 2em;
+
+    position: absolute;
+
+    width: 100%;
+    height: 99%;
+    padding-top: 5%;
+
+    -webkit-animation: fadein 2.4s;
+    -moz-animation: fadein 2.4s;
+    -o-animation: fadein 2.4s;
+    animation: fadein 2.4s;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+
+    width: 100%;
+
+    -webkit-animation: fadein 2s forwards;
+    -moz-animation: fadein 2s forwards;
+    -o-animation: fadein 2s forwards;
+    animation: fadein 2s forwards;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
+
+    opacity: 0;
+}
+
+nav.navsocial ul li {
+    display: inline-block;
+
+    margin-right: 5px;
+}
+
+.patryk_rzucidlo_ptkdev img {
+    width: 150px;
+    height: 150px;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.particles-js {
+    width: 100%;
+    height: 99%;
+
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+
+.cache {
+    display: none;
+}
+
+.version {
+    font-size: 8px;
+    vertical-align: bottom;
+    float: right;
+    color: #818181;
+    position: absolute;
+    bottom: 10px;
+    left: 33px;
+    width: 40px;
+}
+
+@media (max-width: 2560px) {}
+
+@media (max-width: 1920px) {}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1024px) {
+    #content {
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    #content {
+        font-size: .8em;
+
+        padding-top: 10%;
+    }
+
+    .patryk_rzucidlo_ptkdev img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 425px) {
+    nav.navsocial ul {
+        width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
