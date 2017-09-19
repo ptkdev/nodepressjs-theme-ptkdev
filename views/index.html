@@ -62,15 +62,19 @@
     <!--Feed RSS / ATOM-->
     <link rel="alternate" type="application/rss+xml" title="{{ config['site-name'] }} - {{ post['page-title'] }}: Feed RSS" href="{{ config['site-url'] }}/feed.rss" />
     <link rel="alternate" type="application/atom+xml" title="{{ config['site-name'] }} - {{ post['page-title'] }}: Atom" href="{{ config['site-url'] }}/feed.atom" />
+    <!-- DNS CACHE -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
     <!-- CSS -->
     <style>
         {% include "../css/vendor/bootstrap/bootstrap.min.css" ignore missing %}
-        {% include "../css/vendor/fontawesome/fontawesome.min.css" ignore missing %}
         {% include "../css/default.css" ignore missing %}
         {% include "../css/fa.css" ignore missing %}
         {% include "../css/hamburgermenu.css" ignore missing %}
         {% include "../css/sidebar.css" ignore missing %}
+        {% include "../css/vendor/fontawesome/fontawesome.min.css" ignore missing %}
     </style>
+    <link async rel="prefetch" href="https://fonts.google.com/?query=roboto&selection.family=Roboto:300,700" />
     <!--Internet Explorer-->
     <!--[if IE]><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><![endif]-->
 </head>
@@ -89,7 +93,7 @@
             <li><a href="//stickers.ptkdev.it">Stickers Telegram</a></li>
             <li><a href="//istickers.ptkdev.it">Stickers iMessage</a></li>
         </ul>
-        <div class="version">v0.1 Alpha</div>
+        <div class="version">v0.2 Alpha</div>
     </nav>
     <div id="main">
         <div id="content">
@@ -107,7 +111,8 @@
             </article>
             <nav class="navsocial">
                 <ul>
-                    <li><a href="//www.facebook.com/ptkdev" target="_blank" class="fa fa-facebook"></a></li>
+                    <li class="only-mobile"><a href="fb://profile/650070025" target="_blank" class="fa fa-facebook"></a></li>
+                    <li class="only-desktop"><a href="//fb.me/ptkdev" target="_blank" class="fa fa-facebook"></a></li>
                     <li><a href="//twitter.com/ptkdev" target="_blank" class="fa fa-twitter"></a></li>
                     <li><a href="//www.instagram.com/ptkdev/" target="_blank" class="fa fa-instagram"></a></li>
                     <li><a href="//blog.ptkdev.it" target="_blank" class="fa fa-medium"></a></li>
@@ -119,21 +124,35 @@
                     <li><a href="mailto:info@ptkdev.it" target="_blank" class="fa fa-envelope"></a></li>
                 </ul>
             </nav>
-            <footer>
+        </div>
+        <footer>
                 © 2017. Open your source, open your mind.
             </footer>
-        </div>
     </div>
     <div id="particles-js" class="particles-js"></div>
+    
     <script>
         {% include "../js/vendor/jquery/jquery-3.2.1.min.js" ignore missing %}
         {% include "../js/vendor/particles/particles.min.js" ignore missing %}
         {% include "../js/vendor/particles/particles.json" ignore missing %}
         {% include "../js/default.js" ignore missing %}
         {% include "../js/sidebar.js" ignore missing %}
+        {% include "../js/cookielaw.js" ignore missing %}
     </script>
-    <div id="cache" class="cache">
-    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106540532-1"></script>
+    <script>
+        if(document.cookie.indexOf('cookielaw=1') === -1){
+            cookieChoices.showCookieConsentBar('Questo sito utilizza i cookie, se continui la navigazione consideriamo che accetti il loro uso','OK', 'Informazioni', '/cookie');
+        }
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+        gtag('config', '{{ config['google-analytics-id'] }}');
+
+        console.log("Source code of my portfolio is open source :) see my account github: https://github.com/ptkdev");
+    </script>
+    <div id="cache" class="cache"></div>
 </body>
 
 </html>

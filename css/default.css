@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Open Sans Pro';
-    font-weight: 400;
-    font-style: normal;
-
-    src: local('Open Sans Pro'), local('Open Sans Pro'), url('/style/fonts/Open Sans Pro.woff2') format('woff2');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +5,7 @@
 
 html,
 body {
-    font-family: 'Open Sans Pro', 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 
     width: 100%;
@@ -32,12 +24,14 @@ html {
 
 a,
 a:active,
-a:hover,
 a:link,
 a:focus {
     text-decoration: none;
-
     color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 canvas {
@@ -94,16 +88,23 @@ canvas {
 }
 
 h1 {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 3.7em;
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
 }
 
 
-
 footer {
-    position: absolute;
+    position: fixed;
+    clear: both;
     bottom: 10px;
-    font-size: 14px;
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
 
     width: 100%;
 
@@ -121,8 +122,6 @@ footer {
 
 nav.navsocial ul li {
     display: inline-block;
-
-    margin-right: 5px;
 }
 
 .patryk_rzucidlo_ptkdev img {
@@ -143,7 +142,28 @@ nav.navsocial ul li {
     background-size: cover;
 }
 
-
+#cookie_info {
+    position: fixed;
+    width: 100%;
+    background-color: #46aef7;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    padding: 6px;
+    font-size: 14px;
+    z-index: 1000;
+    text-align: center;
+}
+#cookie_dismiss {
+    background-color: #FFF;
+    color: #818181;
+    padding: 3px;
+    border-radius: 20%;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
 
 .cache {
     display: none;
@@ -160,9 +180,24 @@ nav.navsocial ul li {
     width: 40px;
 }
 
+a.cookie_policy {
+    font-size: 8px;
+}
+
+.only-desktop {
+    display: inline !important;
+}
+.only-mobile {
+    display: none !important;
+}
+
 @media (max-width: 2560px) {}
 
-@media (max-width: 1920px) {}
+@media (max-width: 1920px) {
+    p {
+        font-size: 1em;
+    }
+}
 
 @media (max-width: 1440px) {}
 
@@ -174,8 +209,7 @@ nav.navsocial ul li {
 
 @media (max-width: 768px) {
     #content {
-        font-size: .8em;
-
+        font-size: 0.7em;
         padding-top: 10%;
     }
 
@@ -190,8 +224,24 @@ nav.navsocial ul li {
         width: 320px;
         margin: 0 auto;
     }
+    #content {
+        padding-top: 22%;
+    }
+    .only-desktop {
+        display: none !important;
+    }
+    .only-mobile {
+        display: inline !important;
+    }
+    p {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 375px) {}
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    p {
+        font-size: 1em;
+    }
+}
