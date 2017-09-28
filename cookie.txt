@@ -1,0 +1,49 @@
+Cookie Policy:
+I cookie sono piccoli file di testo da memorizzare sul computer di chi visita determinate pagine Web. Ti ricordiamo che i cookie da noi utilizzati non possono danneggiare il computer. All'interno dei cookie non vengono memorizzate informazioni personali, ma si avvale di informazioni crittografate raccolte dai cookie per migliorare l'esperienza degli utenti che visitano il nostro sito Web.
+
+Ad esempio, ci aiutano a identificare e risolvere eventuali errori.
+
+
+Ulteriori informazioni sui cookie:
+Se desideri ulteriori informazioni sui cookie in genere e sulla loro gestione, visita http://www.aboutcookies.org.
+Ti ricordiamo che non siamo responsabili del contenuto dei siti Web esterni.
+
+
+Cookie utilizzati nel sito:
+Nome: PHP SESSION ID
+Scopo:  identifica la sessione di PHP in corso, tramite l'ID; durante la visita del sito
+Scadenza: al termine della sessione di navigazione
+
+Nome: SESS
+Scopo: assicurare il riconoscimento quando ci si sposta da una pagina all'altra nell'ambito del sito e assicurare che ogni informazioni inserita sia ricordata.
+Scadenza: al termine della sessione di navigazione
+
+Nome: __utmz
+Scopo: registra da dove arriva l'utente sul sito (search engine, search keyword, link).
+Durata: 6 mesi
+
+Nome: __utma
+Scopo: registra il numero totale di visite per ogni visitatore, la durata della prima visita e della precedete e di quella corrente.
+Durata: 2 anni
+
+Nome:__utmb
+Scopo: registra le pagine visitate, il numero di link cliccati e la durata della visita dellâ€™utente per ogni pagina.
+Scadenza: 30 minuti dopo il termine della sessione di navigazione.
+
+Nome:__utmc
+Scopo: registra la durata della visita dellâ€™utente
+Scadenza: al termine della sessione di navigazione.
+
+Nome: _ga	
+Scopo: distinzione degli utenti - necessario al servizio di terze parti Google Analytics.	
+Scadenza: 2 anni
+
+Nome: _gat	
+Scopo: distinzione degli utenti - necessario al servizio di terze parti Google Analytics.	
+Scadenza: 10 minuti
+
+Nome: cookielaw
+Scopo: accettazione della policy di gestione dei cookie
+Durata: 1 anno
+
+Si prega di segnalare eventuali cookie presenti ma non segnalati e verranno aggiunti alla lista con relativa spiegazione e l'uso che ne viene fatto. Grazie.

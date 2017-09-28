@@ -75,6 +75,10 @@
     .sidebar.open {
         width: 100%;
     }
+
+    #main.open {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 768px) {}
